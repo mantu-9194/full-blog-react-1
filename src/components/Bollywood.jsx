@@ -7,7 +7,7 @@ import axios from "axios";
 const Bollywood = () => {
   const [data, setData] = useState([])
 useEffect(()=>{
-  axios.get("http://localhost:8000/api/bolly")
+  axios.get("https://dashboard.heroku.com/apps/backend-blog-react111/api/bolly")
   .then((res)=>{
     setData(res.data);
   })
